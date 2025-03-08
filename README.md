@@ -8,11 +8,11 @@
 ## Для запуска проекта на локальной машине следуйте приведенным ниже инструкциям:
 
 Клонируйте репозиторий с помощью команды:
-    ```sh
+    ```
     git clone https://github.com/libdom/MuseumPartisanDistrict.github.io.git
     ```
  Перейдите в папку с проектом:
-    ```sh
+    ```
     cd MuseumPartisanDistrict.github.io
     ```
 Откройте файл index.html в вашем любимом веб-браузере.
