@@ -8,7 +8,7 @@
 
 ## Демонстрация
 
-[Ссылка на демонстрацию]([https://libdom.github.io/MuseumPartisanDistrict.github.io/index.html](https://vatislo.github.io/MuseumPartisanDistrict.github.io/))
+[Ссылка на демонстрацию](https://vatislo.github.io/MuseumPartisanDistrict.github.io)
 
 ## Для запуска проекта на локальной машине следуйте приведенным ниже инструкциям:
 
