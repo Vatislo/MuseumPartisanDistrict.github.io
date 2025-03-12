@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.bg-home {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/домашняя.jpg);
+  background-position: center;
+}
+
+.bg-ab {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/онас.jpg);
+  background-position: top;
+}
+
+.bg-exp {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/экспозиции.jpeg);
+  background-position: top;
+}
+
+.bg-news {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/новости.png);
+  background-position: top;
+}
+
+.bg-sup {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/подержка.jpg);
+  background-position: top;
+}
+
+.bg-vis {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/посещение.png);
+  background-position: center;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.active {
+  border-bottom: solid white 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+nav div:nth-child(1) {
+  font-weight: 900;
+  font-size: 30px;
+  transition-duration: 0.2s;
+  border-bottom: dashed 3px rgba(0, 0, 0, 0);
+}
+nav div:nth-child(1):hover:not(.active) {
+  transform: scale(1.1);
+  border-bottom: dashed 3px white;
+}
+nav div:nth-child(1):hover {
+  transform: scale(1.1);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li {
+  font-weight: 900;
+  transition-duration: 0.2s;
+  border-bottom: dashed 3px rgba(0, 0, 0, 0);
+}
+nav ul li:hover:not(.active) {
+  transform: scale(1.1);
+  border-bottom: dashed 3px white;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.importantly {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+}
+.importantly .importantly-text {
+  max-width: 500px;
+}
+.importantly .importantly-text h1 {
+  margin-bottom: 20px;
+}
+.importantly .active-icon {
+  max-width: 400px;
+  font-size: 200px;
+  text-align: center;
+}
+
+main {
+  background-color: black;
+  padding: 10px;
+}
+main h2 {
+  margin-bottom: 20px;
+}
+
+.card-box {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  max-width: 267px;
+  transition-duration: 1s;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+}
+.card .news-card-back-1 {
+  background-image: url(./img/радиоприёмник.jpg);
+}
+.card .news-card-back-2 {
+  background-image: url(./img/Мосина.png);
+}
+.card .news-card-back-3 {
+  background-image: url(./img/шестерёны.jpg);
+}
+.card .news-card-back-4 {
+  background-image: url(./img/медалимтз.jpg);
+}
+.card .card-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card .card-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 300px;
+}
+.card .card-text a {
+  color: gray;
+}
+
+.subscribe {
+  height: 400px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/2.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe div {
+  padding: 50px;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.subscribe div input {
+  border: black solid 1px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
+}
+.subscribe div input::-moz-placeholder {
+  color: black;
+}
+.subscribe div input::placeholder {
+  color: black;
+}
+.subscribe div button {
+  border: black solid 1px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 40%;
+  background-color: #19a8de;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+.content:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 25px;
+}
+.content div {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.content div a {
+  color: gray;
+}
+.content .content-back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.support-content-back-1 {
+  background-image: url(./img/Валонтёрство.png);
+}
+
+.support-content-back-2 {
+  background-image: url(./img/деньги.jpg);
+}
+
+.support-content-back-3 {
+  background-image: url(./img/наручныйчасы.jpg);
+}
+
+.news-content-back-1 {
+  background-image: url(./img/Мосина.png);
+}
+
+.news-content-back-2 {
+  background-image: url(./img/ВитовтМакс2.png);
+}
+
+.visit-card-back-1 {
+  background-image: url(./img/1ушк69.webp);
+}
+
+.visit-card-back-2 {
+  background-image: url(./img/2ушк69.png);
+}
+
+.visit-card-back-3 {
+  background-image: url(./img/3ушк69.jpg);
+}
+
+.table table {
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+.table table td,
+.table table th {
+  padding: 20px;
+  width: 400px;
+  border: 1px solid white;
+}
+.table a {
+  color: gray;
+  text-align: center;
+  display: block;
+}
+
+.enroll {
+  background-image: url(./img/2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enroll form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.enroll form input,
+.enroll form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: black 1px solid;
+  color: black;
+}
+.enroll form select {
+  color: black;
+}
+.enroll form option {
+  color: black;
+}
+.enroll form button {
+  border: black solid 1px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+  background-color: #19a8de;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  padding: 50px;
+}
+
+.footer-list-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-list div {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list div span:nth-child(1) {
+  font-weight: 700;
+}
+
+.bars {
+  font-size: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .table table {
+    display: block;
+    overflow-x: scroll;
+  }
+  .table table td,
+  .table table th {
+    min-width: 250px;
+  }
+  .content, .content:nth-child(2n) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer-list-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .enroll {
+    height: 350px;
+  }
+  .enroll form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .importantly {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .bars {
+    display: inline-block;
+  }
+  .subscribe {
+    height: 200px;
+  }
+  .subscribe div {
+    flex-direction: column;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subscribe div button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
