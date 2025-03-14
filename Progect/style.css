@@ -58,7 +58,7 @@ h6 {
 header {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
+  padding: 20px;
 }
 
 .active {
@@ -374,6 +374,110 @@ footer {
   display: none;
 }
 
+.cards-exposition .card-exposition {
+  background-color: rgb(22, 21, 21);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.cards-exposition .card-exposition .photo-exposition {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cards-exposition .card-exposition .photo-exposition img {
+  width: 30%;
+  border-radius: 20px;
+}
+.cards-exposition .card-exposition:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.information-exposition {
+  display: flex;
+  justify-content: space-evenly;
+}
+.information-exposition .text-1 {
+  width: 47%;
+  background-color: rgb(26, 25, 25);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card-reverse {
+  flex-direction: row-reverse;
+}
+
+.card-about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card-about .i-about {
+  font-size: 170px;
+  text-align: left;
+}
+.card-about .i-about-reverse {
+  text-align: right;
+}
+.card-about .text-about-box {
+  max-width: 70%;
+  align-items: center;
+}
+
+.title-about {
+  margin-bottom: 20px;
+}
+
+.cards-about {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.card-text-prime {
+  align-items: center;
+  font-size: 30px;
+  width: 47%;
+  text-align: center;
+  display: flex;
+}
+
+.photo-prime {
+  width: 47%;
+  border-radius: 20px;
+}
+
+.photo-school {
+  border-radius: 30px;
+}
+
+.box-photo {
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (max-width: 1268px) {
+  .card-about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .i-about {
+    text-align: center;
+  }
+  .photo-school {
+    width: 70%;
+  }
+}
+.information-exposition {
+  gap: 20px;
+  display: flex;
+}
+
 @media screen and (max-width: 1200px) {
   .table table {
     display: block;
@@ -383,18 +487,48 @@ footer {
   .table table th {
     min-width: 250px;
   }
-  .content, .content:nth-child(2n) {
-    flex-direction: column;
-    align-items: center;
-  }
 }
+.content,
+.content:nth-child(2n) {
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 992px) {
   .footer-list-box {
     flex-direction: column;
     align-items: center;
   }
 }
+@media screen and (max-width: 900px) {
+  .photo-school {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 767px) {
+  .photo-prime {
+    width: 70%;
+  }
+  .card-exposition {
+    align-items: center;
+  }
+  .photo-exposition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo-exposition .photo {
+    width: 70%;
+  }
+  .information-exposition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-text-prime {
+    width: 90%;
+  }
+  .card-text-prime {
+    font-size: 25px;
+  }
   .enroll {
     height: 350px;
   }
@@ -429,5 +563,35 @@ footer {
   }
   .subscribe div button {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-text-prime {
+    font-size: 20px;
+  }
+  .text-1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-about {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .photo-prime {
+    width: 90%;
+  }
+  .photo-school {
+    width: 100%;
+    padding: 10px;
+  }
+  .card-text-prime {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .importantly p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
