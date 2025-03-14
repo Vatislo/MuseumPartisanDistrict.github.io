@@ -418,13 +418,15 @@ footer {
 .card-about .i-about {
   font-size: 170px;
   text-align: left;
+  margin-bottom: 20px;
 }
 .card-about .i-about-reverse {
   text-align: right;
 }
 .card-about .text-about-box {
-  max-width: 70%;
+  max-width: 50%;
   align-items: center;
+  text-align: center;
 }
 
 .title-about {
@@ -461,10 +463,18 @@ footer {
   display: flex;
 }
 
+.title-text {
+  font-size: 17px;
+}
+
 @media screen and (max-width: 1268px) {
   .card-about {
     flex-direction: column;
     align-items: center;
+  }
+  .content,
+  .content:nth-child(2n) {
+    flex-direction: column;
   }
   .i-about {
     text-align: center;
@@ -490,7 +500,6 @@ footer {
 }
 .content,
 .content:nth-child(2n) {
-  flex-direction: column;
   align-items: center;
 }
 
@@ -509,15 +518,18 @@ footer {
   .photo-prime {
     width: 70%;
   }
-  .card-exposition {
+  .cards-exposition .card-exposition {
     align-items: center;
   }
-  .photo-exposition {
+  .cards-exposition .card-exposition .photo-exposition {
     flex-direction: column;
     align-items: center;
   }
-  .photo-exposition .photo {
+  .cards-exposition .card-exposition .photo-exposition .photo {
     width: 70%;
+  }
+  .information-exposition .text-1 {
+    width: 100%;
   }
   .information-exposition {
     flex-direction: column;
