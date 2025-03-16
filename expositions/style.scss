@@ -1,0 +1,36 @@
+header {
+  background-image: linear-gradient(
+      180deg,
+      black 10%,
+      rgba(0, 0, 0, 0.2) 50%,
+      black 100%
+    ),
+    url(./img/экспозиции.jpeg);
+  background-position: top;
+}
+
+.cards-exposition {
+  .card-exposition {
+    background-color: rgb(22, 21, 21);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    .photo-exposition {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      img {
+        width: 30%;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .card-exposition:nth-child(3) {
+    margin-bottom: 0;
+  }
+}

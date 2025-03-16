@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.active {
+  border-bottom: solid white 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+nav div:nth-child(1) {
+  font-weight: 900;
+  font-size: 30px;
+  transition-duration: 0.2s;
+  border-bottom: dashed 3px rgba(0, 0, 0, 0);
+}
+nav div:nth-child(1):hover:not(.active) {
+  transform: scale(1.1);
+  border-bottom: dashed 3px white;
+}
+nav div:nth-child(1):hover {
+  transform: scale(1.1);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li {
+  font-weight: 900;
+  transition-duration: 0.2s;
+  border-bottom: dashed 3px rgba(0, 0, 0, 0);
+}
+nav ul li:hover:not(.active) {
+  transform: scale(1.1);
+  border-bottom: dashed 3px white;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.importantly {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+}
+.importantly .importantly-text {
+  max-width: 500px;
+}
+.importantly .importantly-text h1 {
+  margin-bottom: 20px;
+}
+.importantly .active-icon {
+  max-width: 400px;
+  font-size: 200px;
+  text-align: center;
+}
+
+main {
+  background-color: black;
+  padding: 10px;
+}
+main h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: black;
+  padding: 50px;
+}
+
+.footer-list-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-list div {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list div span:nth-child(1) {
+  font-weight: 700;
+}
+
+.bars {
+  font-size: 20px;
+  display: none;
+}
+
+.title-text {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1268px) {
+  .card-about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .i-about {
+    text-align: center;
+  }
+  .photo-school {
+    width: 70%;
+  }
+}
+.information-exposition {
+  gap: 20px;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .table table {
+    display: block;
+    overflow-x: scroll;
+  }
+  .table table td,
+  .table table th {
+    min-width: 250px;
+  }
+  .content-box .content,
+  .content-box .content:nth-child(2n) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer-list-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .photo-school {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .photo-prime {
+    width: 70%;
+  }
+  .cards-exposition .card-exposition {
+    align-items: center;
+  }
+  .cards-exposition .card-exposition .photo-exposition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards-exposition .card-exposition .photo-exposition .photo {
+    width: 70%;
+  }
+  .information-exposition .text-1 {
+    width: 100%;
+  }
+  .information-exposition {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-text-prime {
+    width: 90%;
+  }
+  .card-text-prime {
+    font-size: 25px;
+  }
+  .enroll {
+    height: 350px;
+  }
+  .enroll form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .importantly {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .bars {
+    display: inline-block;
+  }
+  .subscribe {
+    height: 200px;
+  }
+  .subscribe div {
+    flex-direction: column;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subscribe div button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-text-prime {
+    font-size: 20px;
+  }
+  .text-1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-about {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .photo-prime {
+    width: 90%;
+  }
+  .photo-school {
+    width: 100%;
+    padding: 10px;
+  }
+  .card-text-prime {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .importantly p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=main.css.map */
