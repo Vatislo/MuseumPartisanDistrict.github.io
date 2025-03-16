@@ -1,0 +1,46 @@
+header {
+    background-image: linear-gradient(180deg,
+        black 10%,
+        rgba(0, 0, 0, 0.2) 50%,
+        black 100%),
+      url(./img/домашняя.jpg);
+    background-position: center;
+  }
+  .title-about {
+    margin-bottom: 20px;
+  }
+  
+  .card-about {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 25px;
+  }  
+  
+  .card-text-prime {
+    align-items: center;
+    font-size: 30px;
+    width: 47%;
+    text-align: center;
+    display: flex;
+  }
+  
+  .photo-prime {
+    width: 47%;
+    border-radius: 20px;
+  }
+  
+  .photo-school {
+    border-radius: 30px;
+  }
+  
+  .box-photo {
+    justify-content: center;
+    display: flex;
+  }
+
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+  

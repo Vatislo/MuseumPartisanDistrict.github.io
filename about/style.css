@@ -1,0 +1,61 @@
+@charset "UTF-8";
+header {
+  background-image: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.2) 50%, black 100%), url(./img/онас.jpg);
+  background-position: top;
+}
+
+.card-about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card-about .i-about {
+  font-size: 170px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.card-about .i-about-reverse {
+  text-align: right;
+}
+.card-about .text-about-box {
+  max-width: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.card-reverse {
+  flex-direction: row-reverse;
+}
+
+.cards-about {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.card {
+  max-width: 267px;
+  transition-duration: 1s;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+}
+.card .card-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card .card-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 300px;
+}
+.card .card-text a {
+  color: gray;
+}/*# sourceMappingURL=style.css.map */

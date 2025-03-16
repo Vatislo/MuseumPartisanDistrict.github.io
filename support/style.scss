@@ -1,0 +1,75 @@
+header {
+    background-image: linear-gradient(180deg,
+        black 10%,
+        rgba(0, 0, 0, 0.2) 50%,
+        black 100%),
+      url(./img/подержка.jpg);
+    background-position: top;
+  }
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  .content:nth-child(2n) {
+    flex-direction: row-reverse;
+  } 
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  
+    div {
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 25px;
+  
+      a {
+        color: gray;
+      }
+    }
+  
+    .content-back {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 300px;
+      border-radius: 50px;
+    }
+  }
+
+  .content-back-1 {
+    background-image: url(./img/Валонтёрство.png);
+  }
+  
+  .content-back-2 {
+    background-image: url(./img/деньги.jpg);
+  }
+  
+  .content-back-3 {
+    background-image: url(./img/наручныйчасы.jpg);
+  }
+
+  .table {
+    table {
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      td,
+      th {
+        padding: 20px;
+        width: 400px;
+        border: 1px solid white;
+      }
+    }
+  
+    a {
+      color: gray;
+      text-align: center;
+      display: block;
+    }
+  }
