@@ -25,7 +25,7 @@ header {
   }
 
 .text-about-box{
-  max-width: 50%;
+  width: 50%;
   align-items: center;
   text-align: center;
   
@@ -37,18 +37,29 @@ header {
   }
 
 
-  .cards-about {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+  .card-box-about{
     flex-wrap: wrap;
-    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
   .card {
-    max-width: 267px;
+    width: 30%;
     transition-duration: 1s;
     background-color: rgb(20, 20, 20);
     border-radius: 10px;
+  
+    .about-card-back-1 {
+      background-image: url(./img/i.webp);
+    }
+  
+    .about-card-back-2 {
+      background-image: url(./img/i-2.webp);
+    }
+  
+    .about-card-back-3 {
+      background-image: url(./img/i-1.webp);
+    }
   
     .card-back {
       background-size: cover;
@@ -59,15 +70,51 @@ header {
       border-top-left-radius: 10px;
     }
   
-    .card-text {
+    .card-text-about {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
       padding: 20px;
-      min-height: 300px;
-  
+      gap: 20px;
+      min-height: 500px;
       a {
         color: gray;
       }
+    }
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width:1200px) {
+    .card-reverse{
+      flex-direction: column;
+    }
+  }
+  @media  screen and (max-width:1000px) {
+    .card-box-about{
+      justify-content: center;
+    }
+    .card{
+      width: 35%;
+    }
+  }
+  @media  screen and (max-width:630px) {
+    .card-about{
+      .i-about{
+      font-size: 100px;
+    }
+    .text-about-box{
+      width: 100%;
+    }
+    }
+    .card{
+      width: 70%;
+    }
+    
+  }
+  @media screen and (max-width:400px) {
+    .card{
+      width: 100%;
     }
   }
