@@ -89,7 +89,45 @@ header {
       border-radius: 50px;
     }
   }
-
+  .card-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    max-width: 267px;
+    transition-duration: 1s;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+  
+    .card-back {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+  
+    .card-text {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 20px;
+      min-height: 300px;
+  
+      a {
+        color: gray;
+      }
+    }
+  }
   .card-back-1 {
     background-image: url(./img/радиоприёмник.jpg);
   }
