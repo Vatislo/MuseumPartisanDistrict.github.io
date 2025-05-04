@@ -142,18 +142,6 @@ footer {
   cursor: pointer;
 }
 
-// .information-exposition {
-//   display: flex;
-//   justify-content: space-evenly;
-
-//   .text-1 {
-//     width: 47%;
-//     background-color: rgb(26, 25, 25);
-//     padding: 20px;
-//     border-radius: 20px;
-//   }
-// }
-
 .title-text {
   font-size: 17px;
 }
@@ -314,17 +302,16 @@ footer {
   }
 
   .subscribe {
-    height: 200px;
-
+    height: 300px !important;
+    justify-content: none;
     div {
       flex-direction: column;
-      border-radius: 50px;
-      width: 100%;
-      height: 100%;
+      justify-content: center !important;
+      width: 100% !important;
+      height: 100% !important;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-
+      border-radius: 50px !important;
       button {
         width: 100%;
       }

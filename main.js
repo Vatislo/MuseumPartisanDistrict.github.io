@@ -1,5 +1,5 @@
 document.getElementById("SidePanelButton").addEventListener("click", function () {
-  var SidePanel = document.getElementById("sidepanel");
+   SidePanel = document.getElementById("sidepanel");
   if (SidePanel.style.width === "250px") {
     SidePanel.style.width = "0";
   } else {
@@ -8,6 +8,6 @@ document.getElementById("SidePanelButton").addEventListener("click", function ()
 });
 
 document.getElementById("ClosePanelButton").addEventListener("click", function () {
-  var SidePanel = document.getElementById("sidepanel");
+  let SidePanel = document.getElementById("sidepanel");
   SidePanel.style.width = "0";
 });

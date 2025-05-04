@@ -1,30 +1,16 @@
 # Музей партизанского района
 
-Добро пожаловать в README-файл проекта "Музей партизанского района"! Этот сайт служит визиткой музея партизанского района, где посетители могут ознакомиться с экспонатами, экспозициями и другой интересной информацией о музее.
-
 ## Описание
 
-Проект "Музей партизанского района" создан для того, чтобы предоставить посетителям возможность узнать больше о музее, его истории, экспонатах и экспозициях. На сайте представлена подробная информация о каждом разделе музея, а также фотографии и описания экспонатов.
+Этот подпроект был разработан [мной](https://github.com/Vatislo) и моим [напарником](https://github.com/Alexey177580).
 
-## Демонстрация
+Большую часть работы выполнил я, а мой напарник следовал моим инструкциям.
 
-[Ссылка на демонстрацию](https://vatislo.github.io/MuseumPartisanDistrict.github.io)
+Я хз что тут писать поэтому вталю пару `lorem30`:
 
-## Для запуска проекта на локальной машине следуйте приведенным ниже инструкциям:
+- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro vel, amet quis ratione magnam, laboriosam cum distinctio repellat, expedita architecto placeat molestias neque eaque. Nostrum velit veniam dolores dicta!
+- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro vel, amet quis ratione magnam, laboriosam cum distinctio repellat, expedita architecto placeat molestias neque eaque. Nostrum velit veniam dolores dicta!
 
-1. Клонируйте репозиторий с помощью команды:
-
-    ```sh
-    git clone https://github.com/libdom/MuseumPartisanDistrict.github.io.git
-    ```
-
-2. Перейдите в папку с проектом:
-
-    ```sh
-    cd MuseumPartisanDistrict.github.io
-    ```
-
-3. Откройте файл `index.html` в вашем любимом веб-браузере.
 
 ## Технологии
 
@@ -33,3 +19,4 @@
 - HTML
 - CSS
 - SCSS
+- JS

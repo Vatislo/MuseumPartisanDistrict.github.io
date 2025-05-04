@@ -25,7 +25,7 @@
           <li><a href="../support/index.html">Поддержать</a></li>
           <li><a href="../visits/index.html">Посещения</a></li>
         </ul>
-        <div class="bars">
+        <div id="SidePanelButton" class="bars">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
@@ -118,44 +118,97 @@
       </form>
     </div>
   </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-list-box">
-        <div class="footer-list">
-          <h3>Контакт</h3>
-          <div>
-            <span>E-mail</span>
-            <span>MPD@exemple.com</span>
-          </div>
-          <div>
-            <span>Адрес</span>
-            <span>Авангардная 42</span>
-          </div>
-        </div>
-        <div class="footer-list">
-          <h3>Номера</h3>
-          <div>
-            <span>Школа №69</span>
-            <span>+375 98 765 4321</span>
-          </div>
-          <div>
-            <span>Руководитель</span>
-            <span>+375 12 345 6789</span>
-          </div>
-        </div>
-        <div class="footer-list">
-          <h3>Навигация</h3>
-          <span><a href="../index.html">МПР</a></span>
-          <span><a href="../about/index.html">О музее</a></span>
-          <span><a href="../expositions/index.html">Экспозиции</a></span>
-          <span><a href="../news/index.html">Новости</a></span>
-          <span><a href="../support/index.html">Поддержать</a></span>
-          <span><a href="../visits/index.html">Посещения</a></span>
-        </div>
+    <div id="sidepanel">
+      <ul class="sidepanel-item">
+        <li><a href="../index.html">О музее</a></li>
+        <li><a href="../about/index.html">О музее</a></li>
+        <li><a href="../expositions/index.html">Экспозиции</a></li>
+        <li><a href="../news/index.html">Новости</a></li>
+        <li><a href="../support/index.html">Поддержать</a></li>
+        <li><a href="../visits/index.html">Посещения</a></li>
+      </ul>
+      <ul class="sidepanel-item">
+        <li>
+          <span> E-mail</span>
+          <span> MPD@example.com</span>
+        </li>
+        <li>
+          <span> Школа №69</span>
+          <span> +375 98 765 4321</span>
+        </li>
+        <li>
+          <span>Руководитель</span>
+          <span>+375 12 345 6789</span>
+        </li>
+      </ul>
+      <div class="sidepanel-item">
+        <button id="ClosePanelButton">Закрыть панель</button>
       </div>
     </div>
-  </footer>
+    <footer>
+      <div class="container">
+        <div class="footer-list-box">
+          <div class="footer-list">
+            <h3>Контакт</h3>
+            <div>
+              <span>E-mail</span>
+              <span>MPD@example.com</span>
+            </div>
+            <div>
+              <span>Адрес</span>
+              <span>Авангардная 42</span>
+            </div>
+          </div>
+          <div class="footer-list">
+            <h3>Номера</h3>
+            <div>
+              <span>Школа №69</span>
+              <span>+375 98 765 4321</span>
+            </div>
+            <div>
+              <span>Руководитель</span>
+              <span>+375 12 345 6789</span>
+            </div>
+          </div>
+          <div class="footer-list">
+            <h3>Навигация</h3>
+            <span><a href="./index.html">МПР</a></span>
+            <span><a href="./about/index.html">О музее</a></span>
+            <span><a href="./expositions/index.html">Экспозиции</a></span>
+            <span><a href="./news/index.html">Новости</a></span>
+            <span><a href="./support/index.html">Поддержать</a></span>
+            <span><a href="./visits/index.html">Посещения</a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <div id="sidepanel">
+    <ul class="sidepanel-item">
+      <li><a href="../index.html">МПР</a></li>
+      <li><a href="../about/index.html">О музее</a></li>
+      <li><a href="../expositions/index.html">Экспозиции</a></li>
+      <li><a href="../news/index.html">Новости</a></li>
+      <li><a href="../support/index.html">Поддержать</a></li>
+      <li><a href="../visits/index.html">Посещения</a></li>
+    </ul>
+    <ul class="sidepanel-item">
+      <li>
+        <span> E-mail</span>
+        <span> MPD@example.com</span>
+      </li>
+      <li>
+        <span> Школа №69</span>
+        <span> +375 98 765 4321</span>
+      </li>
+      <li>
+        <span>Руководитель</span>
+        <span>+375 12 345 6789</span>
+      </li>
+    </ul>
+    <div class="sidepanel-item">
+      <button id="ClosePanelButton">Закрыть панель</button>
+    </div>
+  </div>
   <script src="../main.js"></script>
   <script src="https://kit.fontawesome.com/aa803d7ef1.js" crossorigin="anonymous"></script>
 </body>

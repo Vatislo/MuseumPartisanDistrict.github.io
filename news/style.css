@@ -24,20 +24,20 @@ header {
   justify-content: space-between;
   gap: 20px;
 }
-.subscribe div input {
+.subscribe input {
   border: black solid 1px;
   padding: 10px;
   border-radius: 5px;
   width: 100%;
   color: black;
 }
-.subscribe div input::-moz-placeholder {
+.subscribe input::-moz-placeholder {
   color: black;
 }
-.subscribe div input::placeholder {
+.subscribe input::placeholder {
   color: black;
 }
-.subscribe div button {
+.subscribe button {
   border: black solid 1px;
   padding: 10px;
   border-radius: 5px;
